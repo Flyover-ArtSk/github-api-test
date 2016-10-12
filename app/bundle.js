@@ -46,7 +46,7 @@ angular
 /* @ngInject */
 function ListDirective() {
     return {
-        template:'<div infinite-scroll="loadMore()" infinite-scroll-disabled="waitToData" infinite-scroll-distance="3" class="list-group"><div ng-repeat="item in items track by $index" class="list-group-item"><img src="{{item.owner.avatar_url}}" class="avatar pull-left"><h4 class="list-group-item-heading">{{item.name}}</h4><p class="full-name">{{item.full_name}}</p><div class="pull-right">#{{$index + 1}}</div><div class="clearfix"></div><hr><div class="list-group-item-text"><p>{{item.description}}</p><a href="{{item.html_url}}" target="_blank" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-social-github" aria-hidden="true"></span> View on GitHub</a></div></div></div>'
+        template:'<div infinite-scroll="loadMore()" infinite-scroll-disabled="waitToData" infinite-scroll-distance="3" class="list-group"><div ng-repeat="item in items track by $index" class="list-group-item"><img src="{{item.owner.avatar_url}}" class="avatar pull-left"><h4 class="list-group-item-heading">{{item.name}}</h4><p class="full-name">{{item.full_name}}</p><hr><div class="list-group-item-text"><p>{{item.description}}</p><a href="{{item.html_url}}" target="_blank" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-social-github" aria-hidden="true"></span> View on GitHub</a></div></div></div>'
     }
 }
 angular
